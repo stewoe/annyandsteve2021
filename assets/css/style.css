@@ -801,6 +801,11 @@ button{
 /*-------------------------------------------
             7. Love Story CSS
 -------------------------------------------*/
+.spacer-row {
+    height:30px;
+    background-color:red;
+}
+
 .love-story-area {
     background-color: #f9f9f9;
 }
