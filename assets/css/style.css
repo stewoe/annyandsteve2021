@@ -876,14 +876,16 @@ button{
     top: -38px;
     z-index: -1;
 }
-.story-box.story-right .story-text h4 > span {
+.story-box.story-right .story-text h4 > span, 
+.story-box .story-text.show-mobile-device h4 > span {
     left: 0;
 }
 .story-box.story-left {
     padding-bottom: 60px;
 }
 .story-box.story-left .story-text {
-    padding-top: 70px;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 /*Story Box Right Side*/
@@ -892,6 +894,7 @@ button{
 }
 .story-box.story-right .story-text {
     padding-bottom: 70px;
+    padding-top: 30px;
 }
 /*---7.1 Lovable Memories Video Area CSS---*/
 .bride-photo-box.lovable-poster-box::after {
@@ -2560,11 +2563,16 @@ button{
       .story-text h4 {
           font-size: 21px;
       }
+      .story-text.show-mobile-device {
+        text-align: center !important;
+      }
       .story-box.story-right {
-           padding-top: 37px;
+           /*padding-top: 37px;*/
+           padding-top: 20px;
        }
       .story-box.story-left {
-          padding-bottom: 37px;
+          /*padding-bottom: 37px;*/
+          padding-bottom: 0px;
       }
       .story-divider-img img {
           height: 517px;
@@ -2728,7 +2736,10 @@ button{
           display: none;
       }
       .story-photo-box.show-large-device{
-          display: none;
+        display: none;
+      }
+      .story-text.show-large-device{
+        display: none;
       }
       .show-mobile-device{
           display: block;
@@ -2859,8 +2870,11 @@ button{
           /*display: none;*/
       }
       .story-photo-box.show-large-device{
-          display: none;
-      }
+        display: none;
+        }
+        .story-text.show-large-device{
+            display: none;
+        }
       .show-mobile-device{
           display: block;
       }
@@ -2871,8 +2885,11 @@ button{
           padding-top: 26px;
       }
       .story-box.story-left .story-text {
-          padding-top: 26px;
-      }
+        padding-top: 26px;
+    }
+    .story-box.story-left .story-text.show-mobile-device {
+        padding-top: 46px;
+    }
       .story-box.story-right .story-text {
           padding-bottom: 26px;
           padding-top: 26px;
